@@ -1,0 +1,16 @@
+.dragscroll{
+  overflow:hidden;
+}
+.dragscroll div{
+  width:555px;
+}
+.dragscroll a{
+  display:block;
+  margin-right:5px;
+  float:left;
+}
+.dragscroll::after {
+  content: "";
+  clear: both;
+  display: table;
+}

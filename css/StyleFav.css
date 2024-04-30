@@ -1,0 +1,218 @@
+::selection {
+  color: none;
+  background: none;
+}
+p, h2, span {font-family:Arial, Helvetica, sans-serif;}
+Div.ContentFav {
+display: flow-root;
+background-color: #191919;
+width: 70%;
+height: 400px;
+align-content: center;
+justify-content: center;
+margin:auto;
+z-index: 2;
+overflow: auto;
+}
+Div.ItemsFav{
+ width:100%;
+ margin: auto;
+ display: inline-block;
+}
+Div.ItemsFav:hover{
+     background-color: #212121;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+img.FavPicture {
+	background-image:url(../images/LoadIMG.svg); height:123.75px; background-position:center; background-size:100px; background-repeat:no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+  width: 220px;
+  float: left;
+}
+img.FavPicture:hover {
+  float: left;
+  background-color: black;
+  opacity: 0.50;
+    transition: opacity .5s;
+}
+p.TittleFav{
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+img, p {
+    display: inline-block;
+}
+p.TextItem {
+    display:block;
+    margin-top: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+h2.TextItem {
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+span.TextItem {
+    color: whitesmoke;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+p.TextItemTag{
+   display: flex;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+p.TextTypeItem{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    width: 85px;
+    text-transform: uppercase;
+    font-size: 8px;
+    color: black;
+    font-weight: 800;
+    background: #f1f1f1;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 2px;
+    border-radius: 5px 5px;
+    border: 3px solid black;
+}
+.DivTittleFav {
+    font-size: 21px;
+border-radius: 50px 50px 0px 0px;
+background-color: #191919;
+width: 70%;
+height: 40px;
+text-align: center;
+margin: auto;
+}
+ @media(max-width: 720px){
+   Div.ContentFav {
+display: flow-root;
+background-color: #191919;
+width: 95%;
+height: 230px;
+align-content: center;
+justify-content: center;
+margin:auto;
+z-index: 2;
+overflow: auto;
+}
+     .DivTittleFav {
+    font-size: 21px;
+border-radius: 50px 50px 0px 0px;
+background-color: #191919;
+width: 95%;
+height: 40px;
+text-align: center;
+margin: auto;
+font-weight: bold;
+}
+     img.FavPicture {
+    margin: 5px;
+    width: 120px;
+    float: left;
+}
+     p.TextItem {
+    display:block;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+img.FavPicture {
+	background-image:url(../images/LoadIMG.svg); height:auto; background-position:center; background-size:100px; background-repeat:no-repeat;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 120px;
+    float: left;
+}
+h2.TextItem {
+    color: white;
+    font-size: 8px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+span.TextItem {
+       display: block;
+    color: whitesmoke;
+    font-size: 7px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+}
+   }/* width */
+.FavScroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.FavScroll::-webkit-scrollbar-track {
+  background: #191919; 
+}
+ 
+/* Handle */
+.FavScroll::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+.FavScroll::-webkit-scrollbar-thumb:hover {
+  background-color:gray
+; 
+}
+ .FavScroll {
+  cursor: grabbing;
+  display: flex;
+  flex-direction: row;
+}

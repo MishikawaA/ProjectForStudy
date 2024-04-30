@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Yurei Deco</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="../css/templatemo-style.css">
+      <link rel="shortcut icon" href="https://genfavicon.com/tmp/icon_7e6c7e4cae9f57e0f13cd0f9c8c14aa1.ico" />
+      <link rel="stylesheet" href="../css/owl.carousel.min.css">
+      <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+      <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+   </head>
+   <style>
+      /* Estilize o contêiner das legendas */
+      .plyr__captions__container {
+      padding: 10px; /* Espaçamento interno */
+      box-shadow: 23px 23px 23px rgba(0, 0, 0, 0.5); /* Adicione sombra (shadow) como uma borda */
+      }
+      /* Estilize o texto das legendas */
+      .plyr__caption {
+      font-size: 2vw;
+      color: white; /* Altere para a cor desejada */
+      background-color: transparent; /* Cor de fundo */
+      font-family: "Impact", sans-serif;
+      text-transform: uppercase;
+      }
+      @media screen and (min-width: 768px) {
+      .plyr__caption {
+      -webkit-text-stroke: 1px black;
+      text-stroke: 1px black;
+      }
+      }
+      @media screen and (max-width: 768px) {
+      .plyr__caption {
+      font-size: 3vw;
+      color: white; /* Altere para a cor desejada */
+      background-color: transparent; /* Cor de fundo */
+      font-family: "Roboto", sans-serif;
+      -webkit-text-stroke: 0.5px black;
+      text-stroke: 0.5px black;
+      }
+      }
+      /* Trocar a cor do controle deslizante de progresso */
+      .plyr--full-ui input[type=range] {
+      color: whitesmoke; /* Substitua pela cor desejada */
+      }
+      .plyr--video .plyr__progress__buffer {
+      color: antiquewhite;
+      }
+      /* Fundo semi-transparente do controle */
+      .plyr__control--overlaid {
+      background: rgba(255, 87, 51, 0.8); /* Substitua pela cor desejada e ajuste a transparência */
+      }
+      /* Cores dos controles de vídeo em diferentes estados */
+      .plyr--video .plyr__control.plyr__tab-focus,
+      .plyr--video .plyr__control:hover,
+      .plyr--video .plyr__control[aria-expanded=true] {
+      background: gray; /* Substitua pela cor desejada */
+      }
+      /* Sombra ao focar em um controle */
+      .plyr__control.plyr__tab-focus {
+      box-shadow: 0 0 0 5px rgba(255, 87, 51, 0.5); /* Substitua pela cor desejada e ajuste a transparência */
+      }
+      /* Cor do marcador de seleção de menu */
+      .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+      background: gray; /* Substitua pela cor desejada */
+      }
+   </style>
+   <body style="background-color:black;">
+      <div class="main-button-page">
+         <a href="../index.html">Home</a>
+      </div>
+      <div class="container-fluid tm-container-content tm-mt-60">
+         <div class="row">
+            <div class="col-xl-13 col-xl-8 col-lg-7 col-md-6 col-sm-12" id="custom-video-player">
+               <video id="tm-video" class="plyr" autoplay loop controls poster="../images/Load.jpg" preload="auto">
+                  <source src="https://www.googleapis.com/drive/v3/files/1_aeywdv6G1kdNJNe-ImAaQe1MGxpI99n?alt=media&key=AIzaSyDMX5T4tEj_jqpkzxC5X9RzDszQwdEAilw" type="video/mp4">
+                  <track label="Rōmaji" kind="subtitles" srclang="JP-jp" src="../Legendas/YureiDeco.vtt" default>
+               </video>
+            </div>
+            <div class="col-xl-2 col-lg-5 col-md-6 col-sm-12">
+               <div class="tm-video-details">
+                  <h3 class="tm-text-tittleTab">Information</h3>
+                  <h4 class="tm-text-tittleTable2">Anime: Yurei Deco</h4>
+                  <h4 class="tm-text-tittleTable2">Studios: Science SARU</h4>
+                  <h4 class="tm-text-tittleTable2">Genre: Sci-Fi</h4>
+                  <h3 class="tm-text-tittleTab">Song Details</h3>
+                  <h4 class="tm-text-tittleTable2">Song: 1,000,000,000,000,000,000,000,000 LOVE</h4>
+                  <h4 class="tm-text-tittleTable2">Artist: Clammbon</h4>
+                  <h3 class="tm-text-tittleTab">Resources</h3>
+                  <div class="MyAnimeList">
+                     <img src="../images/MALICON.png" class="MALICON" alt="icon">
+                     <a href="https://myanimelist.net/anime/51092/Yurei_Deco" target="_blank">
+                        <h4 class="tm-text-tittleTable">MyAnimeList</h4>
+                     </a>
+                  </div>
+                  <div class="MyAnimeList">
+                     <img src="../images/Download.png" class="MALICON" alt="icon">
+                     <a href="https://drive.google.com/uc?export=download&id=1_aeywdv6G1kdNJNe-ImAaQe1MGxpI99n">
+                        <h4 class="tm-text-tittleTable">Vídeo Download</h4>
+                     </a>
+                  </div>
+                  <h3 class="tm-text-tittleTab">Other Projects</h3>
+                  <div class="slideshow-container">
+                     <div class="slide">
+                        <a href="https://myanimelist.net/profile/Mishikawa">
+                           <img src="../ProjectsImages/Banner.png" style="width:100%">
+                           <div class="caption">My Anime List Profile</div>
+                        </a>
+                     </div>
+                     <div class="slide">
+                        <a href="https://seasonaltimeline.netlify.app/">
+                           <img src="../ProjectsImages/Schedule.png" style="width:100%">
+                           <div class="caption">Anime Schedule</div>
+                        </a>
+                     </div>
+                     <div class="slide">
+                        <a href="https://mishikawa.netlify.app/">
+                           <img src="../ProjectsImages/PlayList.png" style="width:100%">
+                           <div class="caption">Return To Home Page</div>
+                        </a>
+                     </div>
+                     <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                     </div>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p style="text-align:center"class="mb-4">Mishikawa™</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <script src="../js/script.js"></script>
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/popper.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/owl.carousel.min.js"></script>
+      <script src="../js/main.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+         const player = new Plyr('.plyr', {
+            controls: ['play', 'volume' , 'mute' , 'progress', 'current-time' , 'captions' , 'fullscreen' , 'settings'],
+            
+            // Outras configurações aqui
+         });
+         
+         player.on('ready', event => {
+            player.toggleCaptions(true); // Ativar as legendas manualmente
+         });
+         });
+                // Modificar a cor da barra de progresso
+                const progressContainer = player.elements.progress;
+                if (progressContainer) {
+                    const progressBar = progressContainer.querySelector('.plyr__progress--played');
+                    if (progressBar) {
+                        progressBar.style.backgroundColor = 'red'; // Substitua pelo valor de cor desejado
+                    }
+                }
+      </script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+           const video = document.querySelector('video');
+           let countdownInterval;
+           let countdownRunning = false;
+         
+           video.addEventListener('timeupdate', function() {
+               const timeRemaining = video.duration - video.currentTime;
+         
+               if (timeRemaining <= 7 && !countdownRunning) {
+                   startCountdown();
+               }
+           });
+         
+           video.addEventListener('pause', function() {
+               if (countdownRunning) {
+                   video.play(); // Resume video playback if countdown is running
+               }
+           });
+         
+           function startCountdown() {
+               let seconds = 5;
+               countdownRunning = true;
+         
+               const countdownDiv = document.createElement('div');
+               countdownDiv.style.position = 'absolute';
+               countdownDiv.style.zIndex = '1000';
+               countdownDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+               countdownDiv.style.color = 'white';
+               countdownDiv.style.fontFamily = 'Arial, sans-serif';
+               countdownDiv.style.borderRadius = '5px';
+               countdownDiv.className = 'countdownDiv';
+               document.querySelector('.col-xl-8.col-lg-7.col-md-6.col-sm-12').appendChild(countdownDiv);
+         
+               video.controls = false; // Disable video controls during countdown
+         
+               // Ativar a classe .plyr__progress com pointer-events: none
+               document.querySelector('.plyr__progress').style.pointerEvents = 'none';
+         
+               countdownInterval = setInterval(function() {
+                   if (seconds > 0) {
+                       countdownDiv.textContent = `Redirecting in ${seconds} seconds...`;
+                       seconds--;
+                   } else {
+                       clearInterval(countdownInterval);
+                       countdownDiv.style.display = 'none';
+                       executeRedirection();
+         
+                       video.controls = true; // Re-enable video controls after countdown
+                       // Remover a classe .plyr__progress com pointer-events: none
+                       document.querySelector('.plyr__progress').style.pointerEvents = 'auto';
+                   }
+               }, 1000);
+           }
+         
+           function executeRedirection() {
+               const randomIndex = Math.floor(Math.random() * urls.length);
+               const randomUrl = urls[randomIndex];
+               if (randomUrl) {
+                   window.location.href = randomUrl;
+               }
+           }
+         });
+      </script>
+      <script src="urls.js"></script>
+   </body>
+</html>
